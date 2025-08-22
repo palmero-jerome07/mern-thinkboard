@@ -43,4 +43,3 @@ connectDB().then(() => {
   });
 });
 
-// mongodb+srv://jeromepalmero7:ypOrkjgBtkZLs9b1@cluster0.hvdluhu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

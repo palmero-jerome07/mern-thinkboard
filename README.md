@@ -1,4 +1,4 @@
-# 📌 ThinkBoard
+#  ThinkBoard
 
 **ThinkBoard** is a beginner-friendly web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides an interactive space for creating, organizing, and managing notes in a visually appealing way. The project integrates Redis for improved performance and caching, while the frontend is styled with Tailwind CSS and DaisyUI, giving it a modern and responsive design.
 

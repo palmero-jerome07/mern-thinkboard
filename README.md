@@ -19,7 +19,7 @@
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React, Tailwind CSS (if used)  
+- **Frontend:** React, Tailwind CSS  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB (Mongoose ODM)  
 - **Deployment:** Render (cloud hosting)  

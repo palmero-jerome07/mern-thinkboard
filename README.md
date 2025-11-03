@@ -36,5 +36,7 @@
   
   <img width="390" height="845" alt="image" src="https://github.com/user-attachments/assets/4b22f6bd-0057-4257-952b-53248314dd96" />
  
+- Rate Limit
+  <img width="1876" height="964" alt="image" src="https://github.com/user-attachments/assets/186b550a-a0ec-4c40-9988-4487b60e44c5" />
 
 

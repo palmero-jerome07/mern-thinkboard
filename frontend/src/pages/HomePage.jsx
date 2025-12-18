@@ -49,6 +49,15 @@ const HomePage = () => {
 
           {notes.length > 0 && !isRateLimited && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Snowfall
+                snowflakeCount={200}
+                style={{
+                  position: "fixed",
+                  width: "100vw",
+                  height: "100vh",
+                  zIndex: 1,
+                }}
+              />
               {notes.map((note) => (
                 <NoteCard key={note._id} note={note} setNotes={setNotes} />
               ))}

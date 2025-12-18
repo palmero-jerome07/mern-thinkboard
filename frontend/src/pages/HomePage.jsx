@@ -35,16 +35,6 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen relative">
-      <Snowfall
-        snowflakeCount={200}
-        style={{
-          position: "fixed",
-          width: "100vw",
-          height: "100vh",
-          zIndex: 1,
-        }}
-      />
-
       <div className="relative z-10">
         <Navbar />
         {isRateLimited && <RateLimitedUI />}

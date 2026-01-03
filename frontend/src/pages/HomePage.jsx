@@ -5,7 +5,8 @@ import RateLimitedUI from "../components/RateLimitedUI";
 import toast from "react-hot-toast";
 import NoteCard from "../components/NoteCard";
 import NotesNotFound from "../components/NotesNotFound";
-import Snowfall from "react-snowfall";
+import SnowfallBackground from "../components/SnowfallBackground";
+import FireworksBackground from "../components/FireworksBackground";
 
 const HomePage = () => {
   const [isRateLimited, setIsRateLimited] = useState(false);
@@ -49,16 +50,19 @@ const HomePage = () => {
 
           {notes.length > 0 && !isRateLimited && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Snowfall
-                color="#ffff"
-                snowflakeCount={200}
-                style={{
-                  position: "fixed",
-                  width: "100vw",
-                  height: "100vh",
-                  zIndex: 1,
-                }}
-              />
+              {(() => {
+                const now = new Date();
+                const month = now.getMonth();
+                const day = now.getDate();
+                const isSnowfall = month === 11 && day >= 1 && day <= 25;
+                const isFireworks = (month === 11 && day >= 26) || month === 0;
+                return (
+                  <>
+                    {isSnowfall && <SnowfallBackground />}
+                    {isFireworks && <FireworksBackground />}
+                  </>
+                );
+              })()}
               {notes.map((note) => (
                 <NoteCard key={note._id} note={note} setNotes={setNotes} />
               ))}

@@ -4,19 +4,21 @@ function FireworksBackground() {
   return (
     <Fireworks
       options={{
-        rocketsPoint: { min: 0, max: 100 },
-        explosion: 5,
-        intensity: 30,
-        traceLength: 3,
-        traceSpeed: 5,
+        rocketsPoint: { min: 20, max: 80 }, // avoid edges & top
+        explosion: 10, // smaller explosions
+        intensity: 100, // lower fireworks count
+        traceLength: 2,
+        traceSpeed: 3,
       }}
       style={{
-        top: 0,
+        position: "fixed",
+        top: "70px", // adjust based on navbar height
         left: 0,
         width: "100%",
-        height: "100%",
-        position: "fixed",
+        height: "calc(100% - 70px)", // prevent touching navbar
         background: "transparent",
+        pointerEvents: "none",
+        zIndex: 0,
       }}
     />
   );

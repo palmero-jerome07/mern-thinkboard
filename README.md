@@ -9,7 +9,7 @@
 
 ---
 
-## ✨ Features
+## ✨ Features 
 - 📝 Create, edit, and delete notes/boards  
 - 📂 Organize content efficiently  
 - 🌐 Real-time updates and smooth interactions  

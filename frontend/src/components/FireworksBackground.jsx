@@ -7,7 +7,7 @@ function FireworksBackground() {
         rocketsPoint: { min: 20, max: 80 }, // avoid edges & top
         explosion: 10, // smaller explosions
         intensity: 100, // lower fireworks count
-        traceLength: 2,
+        traceLength: 2, //
         traceSpeed: 3,
       }}
       style={{
